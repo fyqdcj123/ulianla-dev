@@ -118,7 +118,7 @@
             <div class="col-md-3 px-3">
                 <div class="row mb-2">
                     <div class="col text-center">
-                        <h1>Other</h1>
+                        <h1>{{ __('Other') }}</h1>
                     </div>
                 </div>
                 <!-- Tax -->

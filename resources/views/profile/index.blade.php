@@ -128,7 +128,7 @@
                                 </div>
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item"><a href="javasript:void(0)"
-                                                            class="active nav-link">{{ __('Settings') }}</a>
+                                                            class="active nav-link">{{ __('Profile') }}</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content pt-3">
