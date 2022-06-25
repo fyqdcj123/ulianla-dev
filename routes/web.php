@@ -54,7 +54,7 @@ Route::middleware(['auth', 'checkSuspended'])->group(function () {
     Route::get('/email/verification-notification', function (Request $request) {
         $request->user()->sendEmailVerificationNotification();
 
-        return back()->with('success', 'Verification link sent!');
+        return back()->with('success', trans('Verification link sent!'));
     })->middleware(['auth', 'throttle:3,1'])->name('verification.send');
 
     #normal routes
