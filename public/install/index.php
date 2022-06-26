@@ -69,7 +69,8 @@ if (!isset($_GET['step'])) {
     <p class="<?php print(checkWriteable() == true ? "ok" : "notok"); ?>">Write-permissions on .env-file</p>
 
     <p class="<?php print(checkPhpVersion() === "OK" ? "ok" : "notok"); ?>"> php
-        version: <?php echo phpversion(); ?> (minimum required <?php echo $requirements["minPhp"]; ?>)</p>
+        version: <?php echo phpversion(); ?> (minimum required <?php $requirements ='7.2.0'; echo $requirements; ?>)</p>
+        echo $requirements["minPhp"]; ?>)</p>
     <p class="<?php print(getMySQLVersion() === "OK" ? "ok" : "notok"); ?>"> mysql
         version: <?php echo getMySQLVersion(); ?> (minimum required <?php echo $requirements["mysql"]; ?>)</p>
 
@@ -191,7 +192,7 @@ echo $cardheader;
 
 
         <button class="btn btn-primary" name="feedDB">Submit</button>
-        </div>
+        </form>
         </div>
 
 
